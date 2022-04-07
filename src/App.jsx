@@ -1,12 +1,17 @@
-import { useState } from 'react'
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Sections/Footer'
+import Cv from './pages/Cv'
 import Landing from './pages/Landing'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App text-gray">
-      <Landing/>
+    <div className="App text-gray bg-black">
+      
+      <Navbar/>
+        {/* <Landing/> */}
+        <Cv/>
+      <Footer/>
     
     </div>
   )
