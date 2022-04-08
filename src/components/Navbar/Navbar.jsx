@@ -4,7 +4,7 @@ import Links from './Links'
 
 const Navbar = () => {
   return (
-    <nav className='sticky top-0 w-full h-16 flex justify-between items-center px-5 text-2xl shadow-lg shadow-white/10 md:px-10 '>
+    <nav className='w-full h-16 flex justify-between items-center px-5 text-2xl shadow-lg shadow-blue/10 md:px-10 '>
       <div className="logo text-lg md:text-2xl font-mono">
           SS
       </div>

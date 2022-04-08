@@ -3,7 +3,7 @@ import { GiBranchArrow } from 'react-icons/gi'
 
 const Header = () => {
   return (
-    <div className='h-screen pt-10 grid place-items-center  items-center grid-rows-3'>
+    <div className='h-screen pt-10 grid place-items-center  items-center grid-rows-3' id='Header'>
       {/* <div className='pb-5 bg-slate-500 flex flex-col items-center justify-center'> */}
         <div className="part-one py-5 text-5xl text-center font-bold sm:text-7xl md:text-8 lg:text-[128px] lg:px-10">
             <h1>Welcome to my page!</h1>

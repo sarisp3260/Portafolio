@@ -1,7 +1,8 @@
 import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Sections/Footer'
-import Cv from './pages/Cv'
+import Cv from './pages/CV'
 import Landing from './pages/Landing'
+
+import {Routes, Route} from  'react-router-dom';
 
 function App() {
 
@@ -9,9 +10,10 @@ function App() {
     <div className="App text-gray bg-black">
       
       <Navbar/>
-        {/* <Landing/> */}
-        <Cv/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Landing/>} />
+        <Route path='/Curriculum-Vitae' element={<Cv/>} />
+      </Routes>
     
     </div>
   )

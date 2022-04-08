@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn, FaWhatsapp, FaSlack, FaInstagram, FaBehance } f
 
 const Footer = () => {
   return (
-    <div className='text-black bg-gradient-to-b from-gray to-blue text-center px-5 py-3 md:px-10'>
+    <div className='text-black bg-gradient-to-b from-gray to-blue text-center px-5 py-3 md:px-10' id='Contact'>
         <span className='font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi expedita sunt voluptate sit quod magnam, magni iure! Facere, aliquam.</span>
 
         <div className="icons py-5 justify-center flex flex-wrap items-center gap-5 text-3xl md:text-4xl">
