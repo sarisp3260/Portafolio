@@ -3,7 +3,7 @@ import About from '../components/Sections/About'
 import Branding from '../components/Sections/Branding'
 import Header from '../components/Sections/Header'
 import Projects from '../components/Sections/Projects'
-import Footer from '../components/Sections/Footer'
+import Footer from '../components/Sections/Footer/Footer'
 import Skills from '../components/Sections/Skills'
 
 const Landing = () => {

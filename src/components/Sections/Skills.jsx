@@ -1,11 +1,16 @@
-import React from 'react'
+import Collapse from "../Collapse/Collapse"
+import Title from "./Title"
 
 const Skills = () => {
   return (
-    <div className='pt-16' id='Skills'>
-      <h1 className='text-center text-5xl font-extrabold text-blue py-5 md:text-7xl'>Skills</h1>
+    <div className='min-h-screen h-max' id='Skills'>
+      <Title title="Skills"/>
 
       <h1>Skills</h1>
+
+      <div className="div-collapse px-3 md:px-10 lg:px-20">
+        <Collapse/>
+      </div>
     </div>
   )
 }

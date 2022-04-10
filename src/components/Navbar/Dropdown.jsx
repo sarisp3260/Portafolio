@@ -16,9 +16,11 @@ const Dropdown = ({items, title}) => {
 
   return (
     <div className='dropdown '>
-        <span className='flex items-center gap-3' onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-            {title} {dropState ? <MdArrowDropUp className='text-3xl'/> : <MdArrowDropDown className='text-3xl'/> }
-        </span>
+        <Link to={"/"}>
+            <span className='flex items-center gap-3' onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                {title} {dropState ? <MdArrowDropUp className='text-3xl'/> : <MdArrowDropDown className='text-3xl'/> }
+            </span>
+        </Link>
         {dropState ? <div className="box-item absolute pt-10 inset-y-0  bottom-0" onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
 
             {items.map((item, index) => 
