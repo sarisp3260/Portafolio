@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import Title from './Title'
+import Title from "../Text/Title"
 
 const About = () => {
   return (

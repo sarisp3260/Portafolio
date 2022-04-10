@@ -6,17 +6,27 @@ import Projects from '../components/Sections/Projects'
 import Footer from '../components/Sections/Footer/Footer'
 import Skills from '../components/Sections/Skills'
 
+
+import { motion } from 'framer-motion'
+
 const Landing = () => {
   return (
     <>
-      <div className='sections px-5 md:px-10'>
+      <motion.div 
+      className='sections px-5 md:px-10'
+
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
+
             <Header/>
             <About/>
             <Skills/>
             <Projects/>
             <Branding/>
             <Testimonials/>
-      </div>
+            
+      </motion.div>
       <Footer/>
     </>
   )

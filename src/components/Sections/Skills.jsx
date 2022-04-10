@@ -1,5 +1,5 @@
 import Collapse from "../Collapse/Collapse"
-import Title from "./Title"
+import Title from "../Text/Title"
 
 const Skills = () => {
   return (
