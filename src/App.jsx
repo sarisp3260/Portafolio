@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar'
-import Cv from './pages/CV'
+import Cv from './pages/Cv'
 import Landing from './pages/Landing'
 
 import {Routes, Route, useLocation} from  'react-router-dom';
