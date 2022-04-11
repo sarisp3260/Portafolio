@@ -77,7 +77,7 @@ const Cv = () => {
         },   
         {
           title: "+57 3162386323",
-          link : "https://www.linkedin.com/in/sara-salas-perez"
+          link : "https://api.whatsapp.com/send?phone=+573162386323&text=Hey!,%20What’s%20up?"
         },   
         {
           title: "saris3260#2817",
@@ -100,8 +100,8 @@ const Cv = () => {
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
     >
-        <div className="first-sec h-max flex flex-col">
-          <div className="sec-intro h-3/4 grid grid-cols-1 md:grid-cols-2 place-items-center mb-10 pt-20 md:pt-10">
+        <div className="first-sec h-max flex flex-col" >
+          <div className="sec-intro h-3/4 grid grid-cols-1 md:grid-cols-2 place-items-center mb-10 pt-20 md:pt-10" id='cv'>
             <GiAstronautHelmet className='text-[128px] lg:text-[500px] md:text-[300px]'/>
             <div className="text-into flex flex-col font-medium gap-10">
               <span className='text-xl md:text-4xl'>I'm</span>
@@ -111,8 +111,10 @@ const Cv = () => {
           </div>
 
           <div className="btns w-full flex flex-col md:flex-row">
-            <button className='btn-primary rounded-none w-full md:w-1/2 py-4 md:py-6 text-xl md:text-2xl font-bold flex items-center justify-center gap-3'>Download <FaFileDownload/> </button>
-
+            
+              <button className='btn-primary rounded-none w-full md:w-1/2 py-4 md:py-6 text-xl md:text-2xl font-bold '><a className='flex items-center justify-center gap-3' href="https://drive.google.com/file/d/1UJz5ixbz8ZuD0dLzquxsHh0xdxR-ytyi/view?usp=sharing">Download <FaFileDownload/>  </a></button>
+           
+            
             <Link to={"/"} className="w-full md:w-1/2">
               <button className='btn-primary rounded-none w-full bg-blue hover:bg-blue/90 py-4 md:py-6 text-xl md:text-2xl font-bold'>Go to portafolio</button>
             </Link>

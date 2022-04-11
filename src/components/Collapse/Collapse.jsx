@@ -81,7 +81,7 @@ const Collapse = () => {
               <div className='flex flex-col space-y-5 items-center'>
                 <span className='font-bold'>{element.title}</span>
                 <span>{element.text}</span>
-                <button className='btn-dark flex items-center justify-center gap-3 w-full md:w-1/2 '>Watch <MdVideoCameraBack className='text-2xl'/></button>
+                {/* <button className='btn-dark flex items-center justify-center gap-3 w-full md:w-1/2 '>Watch <MdVideoCameraBack className='text-2xl'/></button> */}
               </div>
             </div> : null}
             </div>)}

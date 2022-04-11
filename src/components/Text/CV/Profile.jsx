@@ -31,7 +31,7 @@ const Profile = ({ cv }) => {
                 <div className="contact flex flex-col items-center gap-6">
                     {cv[0].contact.map((item, index) =>
                     <div className="text" key={index}>
-                        <h2>{item.title}</h2>
+                        <a className='hover:underline' href={item.link} target={"_blank"}>{item.title}</a>
                     </div>)}
                 </div>
                 <div className="social flex flex-col items-center gap-4">
