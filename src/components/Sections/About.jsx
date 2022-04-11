@@ -4,7 +4,7 @@ import Title from "../Text/Title"
 
 const About = () => {
   return (
-    <div className='min-h-screen h-max' id='About'>
+    <div className='min-h-screen h-max pt-16 md:pt-0' id='About'>
         <Title title="Who am I?" />
         <div className='h-max grid place-items-center items-center grid-cols-1 md:grid-cols-3'>
             <div className="part-text flex flex-col justify-center items-center gap-10 text-lg md:text-center font-bold md:text-2xl md:col-span-2 px-10">

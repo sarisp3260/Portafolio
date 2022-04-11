@@ -3,7 +3,7 @@ import Work from '../Cards/Work'
 
 const Projects = () => {
   return (
-    <div className='text-center' id='Projects'>
+    <div className='text-center pt-16 md:pt-0' id='Projects'>
         <Title title="Projects"/>
         <div className="flex flex-col justify-center items-center gap-5">
           <span className="text-base md:text-xl py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aut cupiditate non modi vero sed voluptas a eos voluptatum odio.</span>

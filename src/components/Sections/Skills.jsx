@@ -3,7 +3,7 @@ import Title from "../Text/Title"
 
 const Skills = () => {
   return (
-    <div className='min-h-screen h-max' id='Skills'>
+    <div className='min-h-screen h-max pt-16 md:pt-0' id='Skills'>
       <Title title="Skills"/>
 
       <h1>Skills</h1>

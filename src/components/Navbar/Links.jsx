@@ -30,7 +30,7 @@ const Links = ({responsive}) => {
 
   return (
     <>
-      <Link to="/">Home</Link>
+      <a href="/#Header">Home</a>
       {responsive === 'yes' ?
       <>
         {about.map((item,index) => <a href={item.link} key={index}>{item.title}</a>)}
