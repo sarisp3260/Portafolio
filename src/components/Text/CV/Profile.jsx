@@ -1,33 +1,46 @@
 import SubTitle from '../SubTitle'
 import Title from '../Title'
-import { FaFileDownload, FaGithub, FaLinkedinIn, FaWhatsapp, FaSlack, FaInstagram, FaBehance } from 'react-icons/fa'
+import { FaFileDownload, FaGithub, FaLinkedinIn, FaWhatsapp, FaSlack, FaDiscord, FaGoogle } from 'react-icons/fa'
 import { FcCloseUpMode } from 'react-icons/fc'
 
-const Profile = () => {
+const Profile = ({ cv }) => {
+    const socialMedia = [<FaLinkedinIn />,<FaGithub />, <FaWhatsapp />, <FaDiscord />, <FaGoogle />]
   return (
     <section className="right-item bg-gray h-full w-full text-black p-10">
         <div className="second-sec">
             <SubTitle title="Profile" />
-            <p>I am a web developer bilingual experienced in projects with Scrum methodoliges. I am  hard working and I have a good team worker, who always be friendly and polite, and also willing to learn new skills. Most important I am able to listen effectively to follow up and solve problems.</p>
+            <p>{cv[0].longDesc}</p>
         </div>
         <div className="third-sec w-full flex flex-col justify-center">
             <SubTitle title="English"/>
-            <div className="cont bg-black rounded-md w-3/4 flex flex-col md:w-full hover:scale-105 transition ease-out duration-700">
-                <div className="certification bg-blue rounded-t-md p-5 flex justify-between items-center gap-5 pb-5">
-                    <span className='text-xl font-bold'>Education First</span>
-                    <a className="btn-primary" href="https://drive.google.com/file/d/1maNV3IxX9xBO297PHesszdOfEvadOw-g/view?usp=sharing" target="_blank">Certification</a>
+            <div className="cont bg-black rounded-md flex flex-col md:w-full hover:scale-105 transition ease-out duration-700">
+                <div className="certification bg-blue rounded-t-md p-5 flex flex-wrap justify-between items-center gap-5 pb-5">
+                    <span className='text-xl font-bold'>{cv[0].enCertification.title}</span>
+                    <a className="btn-primary" href={cv[0].enCertification.link} target="_blank">Certification</a>
                 </div>
-                <div className="text text-gray flex justify-between py-5 px-10">
-                    <h2 className='text-xl font-bold flex items-center gap-3'> <FcCloseUpMode/> Reading</h2>
-                    <span>Medium</span>
-                </div>
+                {cv[0].english.map((item,index)=>
+                    <div className="text text-gray flex justify-between py-5 px-5 md:px-10" key={index}>
+                        <h2 className='text-xl font-bold flex items-center gap-3'> <FcCloseUpMode/>{item.title}</h2>
+                    <span>{item.desc}</span>
+            </div>)}
             </div>
         </div>
         <div className="third-sec">
-            <SubTitle title="Contact"/>
-            <div className="text flex items-center gap-3">
-                <h2>Reading</h2>
-                <FaLinkedinIn />
+            <SubTitle title="Contact me"/>
+            <div className="grid grid-cols-2">
+                <div className="contact flex flex-col items-center gap-6">
+                    {cv[0].contact.map((item, index) =>
+                    <div className="text" key={index}>
+                        <h2>{item.title}</h2>
+                    </div>)}
+                </div>
+                <div className="social flex flex-col items-center gap-4">
+                    {socialMedia.map((item2,index)=>
+                        <div className="div-icon text-3xl" key={index}>
+                            {item2}
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     </section>

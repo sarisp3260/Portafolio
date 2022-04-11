@@ -14,7 +14,7 @@ const Navbar = () => {
   console.log(location)
 
   return (
-    <nav className='w-full fixed top-0 bg-black h-16 flex justify-between items-center px-5 text-2xl shadow-lg shadow-blue/10 z-10 md:px-10 md:static mb-16'>
+    <nav className='w-full fixed top-0 bg-black h-16 flex justify-between items-center px-5 text-2xl shadow-lg shadow-blue/10 z-10 md:px-10 md:static'>
       <div className="logo text-lg md:text-2xl font-mono">
           <img className='w-10' src={logo} alt="" />
       </div>
