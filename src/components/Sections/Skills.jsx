@@ -6,8 +6,6 @@ const Skills = () => {
     <div className='min-h-screen h-max pt-16 md:pt-0' id='Skills'>
       <Title title="Skills"/>
 
-      <h1>Skills</h1>
-
       <div className="div-collapse px-3 md:px-10 lg:px-20">
         <Collapse/>
       </div>

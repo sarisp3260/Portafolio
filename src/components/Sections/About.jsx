@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+import memoji from '../../assest/MEmoji.png'
+
 import Title from "../Text/Title"
 
 const About = () => {
@@ -13,7 +15,7 @@ const About = () => {
                 <button className='btn-primary w-fit'><Link to={'/Curriculum-Vitae'}>Know more</Link></button>
             </div>
             <div className="part-img">
-                <img className='w-96' src="https://raw.githubusercontent.com/sarisp3260/IMG/main/R%26M%20IMG/Rick.png" alt="" />
+                <img className='w-96' src={memoji} alt="" />
             </div>
         </div>
     </div>
