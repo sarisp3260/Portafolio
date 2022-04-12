@@ -46,7 +46,7 @@ const Collapse = () => {
         img2: "https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg",
         text: "Important tools to design this beautiful wireframe, mockups or logos. I really love exploring new things and mixing colors to create great designs."
     },
-    {
+    /* {
         id: 6,
         title: "Mongo",
         img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
@@ -58,7 +58,7 @@ const Collapse = () => {
         title: "Laravel",
         img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg",
         text: "Despite the short time learning this tool is quite wonderfull framework to create full websites"
-    },
+    }, */
   ]
 
   return (

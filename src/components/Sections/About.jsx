@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import memoji from '../../assest/MEmoji.png'
 
@@ -12,7 +12,7 @@ const About = () => {
             <div className="part-text flex flex-col justify-center items-center gap-10 text-lg md:text-center font-bold md:text-2xl md:col-span-2 px-10">
                 <span>I am a bilingual web developer with experience in projects especially with Scrum methodologies. I'm a hard worker and have a good teamwork skills</span>
                 <span>So enthusiastic to work together, then feel free to get in touch with me.</span>
-                <button className='btn-primary w-fit'><Link to={'/Curriculum-Vitae/#cv'}>Know more</Link></button>
+                <button className='btn-primary w-fit'><NavLink to={'/Curriculum-Vitae'}>Know more</NavLink></button>
             </div>
             <div className="part-img">
                 <img className='w-96' src={memoji} alt="" />
