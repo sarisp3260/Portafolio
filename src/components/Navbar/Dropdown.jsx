@@ -12,7 +12,6 @@ const Dropdown = ({items, title}) => {
         setDropState(false)
     }
 
-    //console.log("include:", items.includes('CV'))
 
   return (
     <div className='dropdown '>
@@ -25,7 +24,7 @@ const Dropdown = ({items, title}) => {
 
             {items.map((item, index) => 
             <div className='dropdown-menu bg-white/80 px-4 py-2 flex flex-col ' key={index}>
-                <a href={item.link} className='text-black text-lg font-medium'>{item.title}</a>
+                <a key={index} href={item.link} className='text-black text-lg font-medium'>{item.title}</a>
             </div>)}
 
         </div>

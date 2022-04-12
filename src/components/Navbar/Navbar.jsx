@@ -25,7 +25,7 @@ const Navbar = () => {
           {isOpen ? 
           <div className="nav-items-menu h-screen flex flex-col fixed top-16 right-0 w-full bg-black/70 backdrop-blur-lg gap-8 p-8">
 
-            <Links responsive='yes' onClick={(value)=> setIsOpen(value)}/>
+            <Links responsive='yes' onClick={(changeState)=> setIsOpen(changeState)}/>
   
           </div> : null}
 

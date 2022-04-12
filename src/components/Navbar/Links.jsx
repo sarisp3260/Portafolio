@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 const Links = ({responsive , onClick }) => {
@@ -33,9 +33,9 @@ const Links = ({responsive , onClick }) => {
       <a href="/#Header" onClick={() => onClick(false) }>Home</a>
       {responsive === 'yes' ?
       <>
-        {about.map((item,index) => <a href={item.link} key={index} onClick={() => onClick(false) }>{item.title}</a>)}
+        {about.map((item, index) => <><a key={index} href={item.link} onClick={() => onClick(false) }>{item.title}</a></>)}
         
-        {work.map((item,index) => <a href={item.link} key={index} onClick={() => onClick(false) }>{item.title}</a>)}
+        {work.map((item, index) => <><a key={index} href={item.link} onClick={() => onClick(false) }>{item.title}</a></>)}
       </> 
       : <>
         <Dropdown items={about} title={"About"} />

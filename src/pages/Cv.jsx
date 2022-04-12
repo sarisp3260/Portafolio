@@ -92,8 +92,6 @@ const Cv = () => {
     }
   ]
 
-  console.log(cv)
-
   return (
     <motion.div className='cv'
     initial={{ opacity: 0 }}
