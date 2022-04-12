@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <div className='text-black bg-gradient-to-b from-gray to-blue text-center px-5 py-10 md:px-10 ' id='Contact'>
         
-        <div className="container-footer grid grid-cols-1 md:grid-cols-2 place-items-center gap-5 mb-10">
+        <div className="container-footer grid grid-cols-1 md:grid-cols-3 place-items-center gap-5 mb-10">
           <div className="left">
             <Icons color='hover:text-black/80 hover:scale-125'/>
           </div>
-          <div className="right w-full space-y-5">
+          <div className="right col-span-2 w-full space-y-5">
             <h1 className='text-5xl font-bold md:text-4xl'>Contact me!</h1>
             <Form/>
           </div>

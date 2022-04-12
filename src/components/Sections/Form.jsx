@@ -12,7 +12,7 @@ const Form = () => {
         </div>
 
         <div class="mt-10 relative">
-            <input id="subject" type="text" name="subject" class="peer h-10 px-4 w-full border-b-4 rounded-xl bg-gray/80 border-transparent text-gray-900 placeholder-transparent focus:outline-none focus:border-blue" placeholder="Subject" autoComplete='none'/>
+            <input id="subject" type="text" name="subject" class="peer h-10 px-4 w-full border-b-4 rounded-xl bg-gray/80 border-transparent text-gray-900 placeholder-transparent focus:outline-none focus:border-blue" placeholder="Subject" />
 
             <label for="subject" class="absolute left-2 -top-7 text-gray-600 text-base transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-7 peer-focus:text-gray peer-focus:font-semibold peer-focus:text-lg">Subject</label>
         </div>

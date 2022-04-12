@@ -10,7 +10,9 @@ const Work = ({ project }) => {
       <div key={index} className='flex flex-col items-center justify-center gap-3 bg-gray/70 rounded-md transform hover:scale-95 transition ease-out duration-700'>
 
         <picture className='w-52 md:w-72'>
-          <img src={item.img} alt="" className='w-auto rounded-t-md'/>
+          <Link to={`/ProjectsView/${item.title}`} target="_top">
+            <img src={item.img} alt="" className='w-auto rounded-t-md'/>
+          </Link>
         </picture>
 
 
