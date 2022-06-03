@@ -1,4 +1,4 @@
-import Title from "../Text/Title"
+import Title from "../Text/Title";
 import CardPerson from '../Cards/CardPerson'
 
 const Testimonials = () => {

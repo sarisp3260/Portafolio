@@ -1,5 +1,4 @@
-import Collapse from "../Collapse/Collapse"
-import Title from "../Text/Title"
+import Title from "../components/Text/Title"
 
 const Skills = () => {
   return (
@@ -7,7 +6,6 @@ const Skills = () => {
       <Title title="Skills"/>
 
       <div className="div-collapse px-3 md:px-10 lg:px-20">
-        <Collapse/>
       </div>
     </div>
   )

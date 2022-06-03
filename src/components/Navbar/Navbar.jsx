@@ -1,34 +1,20 @@
-import { useState } from 'react'
-import { FaStream } from 'react-icons/fa'
-import Links from './Links'
+/* import { FaStream } from 'react-icons/fa' */
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 import logo from '../../assest/ssBlue.png'
 
 const Navbar = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className='w-full fixed top-0 bg-black h-16 flex justify-between items-center px-5 text-2xl shadow-lg shadow-blue/10 z-10 md:px-10'>
-      <div className="logo text-lg md:text-2xl font-mono">
-          <Link to="/"><img className='w-10 animate-wiggle' src={logo} alt="" /></Link>
+    <nav className='bg-black w-full h-16 fixed top-0 flex justify-between items-center px-5 text-2xl md:px-6 z-40'>
+      <div className="logo animate-wiggle">
+          <Link to="/"><img className='w-8' src={logo} alt="" /></Link>
       </div>
-      <div className="menu hidden md:inline-flex">
-        <div className="link flex relative items-center gap-8 lg:gap-20">
-          <Links/>
-        </div>
-      </div>
-      <div className="menu-icon flex md:hidden">
-        <FaStream className='text-lg' onClick={() => setIsOpen(!isOpen)}/>
-
-          {isOpen ? 
-          <div className="nav-items-menu h-screen flex flex-col fixed top-16 right-0 w-full bg-black/70 backdrop-blur-lg gap-8 p-8">
-
-            <Links responsive='yes' onClick={(changeState)=> setIsOpen(changeState)}/>
-  
-          </div> : null}
-
+      <div className="div flex items-center gap-5">
+        <a href="https://www.linkedin.com/in/sara-salas-perez" target="_blank"><FaLinkedinIn className="hover:text-white/50 scale-125"/></a>
+        <a href="https://github.com/sarisp3260" target="_blank"><FaGithub className="hover:text-white/50 scale-125"/></a>
+        <a href="https://api.whatsapp.com/send?phone=+573162386323&text=Hey!,%20What’s%20up?" target="_blank"><FaWhatsapp className="hover:text-white/50 scale-125"/></a>
       </div>
     </nav>
   )

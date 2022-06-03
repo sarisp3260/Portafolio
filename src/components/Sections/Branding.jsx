@@ -1,6 +1,9 @@
 import Title from "../Text/Title"
 import Logos from '../Cards/Logos'
 
+import {FiArrowRight} from 'react-icons/fi'
+import { Link } from "react-router-dom"
+
 const Branding = () => {
   const branding = [
     {
@@ -23,14 +26,17 @@ const Branding = () => {
     }
   ]
   return (
-    <div className='pt-16' id='Branding'>
+    <div className='relative w-full pt-10 md:pt-0' id='Branding'>
       <Title title="Branding"/>
       <div className="flex flex-col justify-center items-center gap-5">
-        <span className="text-xl md:text-2xl py-5">This section you could see some of my principal work in branding. I hope you like it and waiting for more</span>
-        <div className='py-3 flex flex-wrap items-center justify-center gap-10'>
+        <span className="text-base md:text-xl text-center p-5">This section you could see some of my principal work in branding. I hope you like it and waiting for more</span>
+        <div className='py-3 flex flex-wrap items-center justify-center gap-10 mb-10 md:mb-0'>
             <Logos branding={branding}/>
         </div>
       </div>
+      <Link to="/Work/Projects" className="absolute right-5 top-0 xs:right-16">
+          <button className="btn-primary text-base center gap-2">Go to Projects <FiArrowRight/> </button>
+      </Link>
     </div>
   )
 }

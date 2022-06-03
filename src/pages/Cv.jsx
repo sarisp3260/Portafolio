@@ -6,6 +6,8 @@ import { FaFileDownload } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Info from '../components/Text/CV/Info'
 import Profile from '../components/Text/CV/Profile'
+import Navbar from '../components/Navbar/Navbar'
+import ResponsiveMenu from '../components/Navbar/ResponsiveMenu'
 
 const Cv = () => {
 
@@ -98,6 +100,11 @@ const Cv = () => {
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
     >
+      <Navbar />
+      <ResponsiveMenu/>
+      <div className='m-0 lg:ml-16'>
+
+      </div>
         <div className="first-sec h-max flex flex-col" >
           <div className="sec-intro h-3/4 grid grid-cols-1 md:grid-cols-2 place-items-center mb-10 pt-20 " id='cv'>
             <GiAstronautHelmet className='text-[128px] lg:text-[500px] md:text-[300px]'/>
