@@ -62,4 +62,13 @@ export const project = [
       repo: "https://github.com/sarisp3260/VasedWeb",
       category: "Full-Stack",
     },
+    {
+      id: 8,
+      title: "CRUDo",
+      img: "https://dsm01pap007files.storage.live.com/y4mB1c715O_EbtIb6BRhGDBZfjKcjbAt6pjcUQA5hET17unXflEp2z6CdUrHW9PPeTDmtRU-zWWh9CBkHzmjeGvOTtVzU7QWTRGsjqCSs07opcipetlWT12SrHO97Wp3RCfoDGaVOMi1PniPd-BzLw4VCBnU7agyW2SRHdChcDf5-Hu4Z3p74AlzxVhwrAlfoGX?width=640&height=426&cropmode=none",
+      desription: "This project was developed in PHP and as database is MySQL, it is a CRUD application. where you can create and edit and delete data.",
+      demo: "https://crudo-13622.herokuapp.com/index.php",
+      repo: "https://github.com/sarisp3260/El-Consultorio-CRUDo.git",
+      category: "Full-Stack",
+    },
   ]
