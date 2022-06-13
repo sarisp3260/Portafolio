@@ -25,13 +25,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar, #descripScroll::-webkit-scrollbar{
   width: 8px;
 }
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track , #descripScroll::-webkit-scrollbar-track{
   background-color:  #1C1B20;
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb, #descripScroll::-webkit-scrollbar-thumb{
   background-color: #36BCD1;
   border-radius: 10px;
 }

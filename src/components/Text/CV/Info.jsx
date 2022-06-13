@@ -5,6 +5,7 @@ import { GiFeather, GiThorHammer } from 'react-icons/gi'
 import { MdStickyNote2 } from 'react-icons/md'
 
 const Info = ({ cv }) => {
+
   return (
     <section className="left-item px-10 py-5">
         <div className="third-sec">
@@ -18,31 +19,25 @@ const Info = ({ cv }) => {
                 </div>
                 <h2 className="ml-10 font-semibold">{item.date}</h2>
                 <span className="ml-16 font-semibold">{item.subtitle}</span>
-                <div className="div ml-24 flex items-center gap-3">
-                    <BsArrowReturnRight/>
-                    {item.desc}
-                </div>
+                <>
+                    {item.desc.map((items, index) =>
+                        <div className="div ml-24 flex items-center gap-3">
+                            <>
+                                <BsArrowReturnRight key={index}/>
+                                {items}
+                            </>
+                        </div>
+                        )}
+                </>
 
             </div>)}
         </div>
+
         <div className="third-sec">
-            <SubTitle title="Soft skills"/>
+            <SubTitle title="Skills and tools"/>
 
             <div className="flex flex-wrap gap-10">
-                {cv[0].softskill.map((item,index) =>
-                <div className="div flex items-center gap-3" key={index}>
-                    <GiFeather/>
-                    <span className="text-xl">{item}</span>
-                </div>)}
-            </div>
-            
-            
-        </div>
-        <div className="third-sec">
-            <SubTitle title="Hard skills"/>
-
-            <div className="flex flex-wrap gap-10">
-                {cv[0].hardskill.map((item,index) =>
+                {cv[0].skills.map((item,index) =>
                 <div className="div flex items-center gap-3" key={index}>
                     <GiThorHammer/>
                     <span className="text-xl">{item}</span>
@@ -58,7 +53,8 @@ const Info = ({ cv }) => {
             <div className="div pb-5" key={index}>
                 <h2 className="font-bold text-xl flex items-center gap-3"> <MdStickyNote2 className="text-2xl"/> {item.title}</h2>
                 <p className="py-5 ml-10">{item.subtitle}</p>
-                <a className="btn-primary my-5 ml-16" href={item.link} target="_blank">View certification</a>
+                {item?.link &&
+                <a className="btn-primary my-5 ml-16" href={item.link} target="_blank">View certification</a>}
             </div>)}
 
         </div>

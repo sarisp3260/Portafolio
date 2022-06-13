@@ -1,13 +1,4 @@
-import Title from "../Text/Title"
-import Logos from '../Cards/Logos'
-
-import {FiArrowRight} from 'react-icons/fi'
-import { Link } from "react-router-dom"
-
-import { branding } from '../../data/branding'
-
-const Branding = () => {
-  /* const branding = [
+export const branding = [
     {
       id: 1,
       title: "Woof!",
@@ -25,22 +16,11 @@ const Branding = () => {
       title: "Soul",
       img: "https://dsm01pap001files.storage.live.com/y4mjPc-BYLz4YOycTA2l9gaRQQ3q1JbdW42cyMP0ENmolWRzFOMN96FbWNYMIxKmvMKDz-efTXecHfDtucTWspFpMKrv5joezMnM2IAt4bHEYYCdhDhIZoOUC9INRRowogPT0zjzNhIwSisdFks6kwUh2fUnJpzunmZd1DY7Sl6ZlgLo7abZK8AuXcqCErOcqV2?width=852&height=845&cropmode=none",
       figma: "https://www.figma.com/file/4tSHVDc16SQWnBfbbozJCf/Soul?node-id=0%3A1"
+    },
+    {
+      id: 4,
+      title: "Fruver Shop",
+      img: "https://dsm01pap007files.storage.live.com/y4mAGeOZeCjAAHEq9qTNSwz6BE3FeFLUTixx6hujjjEcWo52_djqNPRv-NDjErRKYqGJ5i1kVXfRzJSoWZhtWDW0e0iAAxfwd-zFab8rVAp6r_0jULL8-zkDQigjDQUxnwmSVzhdzmV-FX9n-xovxrnYSakAW4dlJ_DQ__rmRp3NWgeEyfdsODWl9WT4Kt6W8Qu?width=301&height=288&cropmode=none",
+      figma: "https://www.figma.com/file/IkawIbTZkL6h9fLJJsj4rg/HackatonFruverShop?node-id=270%3A496"
     }
-  ] */
-  return (
-    <div className='relative w-full pt-10 md:pt-0' id='Branding'>
-      <Title title="Branding"/>
-      <div className="flex flex-col justify-center items-center gap-5">
-        <span className="text-base md:text-xl text-center p-5">This section you could see some of my principal work in branding. I hope you like it and waiting for more</span>
-        <div className='py-3 flex flex-wrap items-center justify-center gap-10 mb-10 md:mb-0'>
-            <Logos branding={branding}/>
-        </div>
-      </div>
-      <Link to="/Work/Projects" className="absolute right-5 top-0 xs:right-16">
-          <button className="btn-primary text-base center gap-2">Go to Projects <FiArrowRight/> </button>
-      </Link>
-    </div>
-  )
-}
-
-export default Branding
+  ]

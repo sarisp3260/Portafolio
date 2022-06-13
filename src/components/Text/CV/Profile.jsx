@@ -12,18 +12,30 @@ const Profile = ({ cv }) => {
             <p>{cv[0].longDesc}</p>
         </div>
         <div className="third-sec w-full flex flex-col justify-center">
-            <SubTitle title="English"/>
-            <div className="cont bg-black rounded-md flex flex-col md:w-full hover:scale-105 transition ease-out duration-700">
-                <div className="certification bg-blue rounded-t-md p-5 flex flex-wrap justify-between items-center gap-5 pb-5">
-                    <span className='text-xl font-bold'>{cv[0].enCertification.title}</span>
-                    <a className="btn-primary" href={cv[0].enCertification.link} target="_blank">Certification</a>
+            <SubTitle title="Languages"/>
+            {cv[0].languages.map((speak, index) =>
+                <div className="cont bg-black rounded-md flex flex-col md:w-full hover:scale-105 transition ease-out duration-700 mb-5" key={index}>
+                    <div className="certification bg-blue rounded-t-md p-5 flex flex-wrap justify-between items-center gap-5 pb-5">
+                        <span className='text-xl font-bold'>{speak.title}</span>
+                        
+                    </div>
+                    
+                    <div className="text text-gray flex justify-between items-center py-5 px-5 md:px-10" >
+                        <h2 className='text-xl font-bold flex items-center gap-3'> 
+
+                        <FcCloseUpMode/>
+
+                        {speak?.certification} 
+
+                        {speak?.link &&
+                        <a className="btn-primary" href={speak.link} target="_blank">Certification</a>}
+
+                        </h2>
+                        <span>{speak.level}</span>
+                    </div>
+                
                 </div>
-                {cv[0].english.map((item,index)=>
-                    <div className="text text-gray flex justify-between py-5 px-5 md:px-10" key={index}>
-                        <h2 className='text-xl font-bold flex items-center gap-3'> <FcCloseUpMode/>{item.title}</h2>
-                    <span>{item.desc}</span>
-            </div>)}
-            </div>
+            )}
         </div>
         <div className="third-sec">
             <SubTitle title="Contact me"/>

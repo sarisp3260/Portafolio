@@ -1,6 +1,7 @@
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import { motion } from "framer-motion";
+import '../../index.css'
 
 const Work = ({ item }) => {
   return (
@@ -23,7 +24,7 @@ const Work = ({ item }) => {
             {item.title}
           </p>
 
-          <p className="mx-4 mt-12 h-20 pb-3 overflow-y-auto text-sm xs:text-base xs:mt-10 xs:h-24">
+          <p id="descripScroll" className="mx-4 mt-12 h-20 pb-3 overflow-y-auto text-sm xs:text-base xs:mt-10 xs:h-24">
             {item.desription}
           </p>
 
