@@ -7,7 +7,7 @@ import { MdStickyNote2 } from 'react-icons/md'
 const Info = ({ cv }) => {
 
   return (
-    <section className="left-item px-10 py-5">
+    <section className="left-item px-10 py-5" key={cv.name}>
         <div className="third-sec">
             <SubTitle title="Education"/>
             
@@ -21,7 +21,7 @@ const Info = ({ cv }) => {
                 <span className="ml-16 font-semibold">{item.subtitle}</span>
                 <>
                     {item.desc.map((items, index) =>
-                        <div className="div ml-24 flex items-center gap-3">
+                        <div className="div ml-24 flex items-center gap-3" key={index}>
                             <>
                                 <BsArrowReturnRight key={index}/>
                                 {items}
@@ -49,13 +49,15 @@ const Info = ({ cv }) => {
         <div className="third-sec">
             <SubTitle title="Achivements"/>
 
-            {cv[0].achivments.map((item, index) =>
-            <div className="div pb-5" key={index}>
-                <h2 className="font-bold text-xl flex items-center gap-3"> <MdStickyNote2 className="text-2xl"/> {item.title}</h2>
-                <p className="py-5 ml-10">{item.subtitle}</p>
-                {item?.link &&
-                <a className="btn-primary my-5 ml-16" href={item.link} target="_blank">View certification</a>}
-            </div>)}
+            <div className="h-44 overflow-y-scroll miniScroll relative">
+                {cv[0].achivments.map((item, index) =>
+                <div className="div pb-5" key={index}>
+                    <h2 className="font-bold text-xl flex items-center gap-3"> <MdStickyNote2 className="text-2xl"/> {item.title}</h2>
+                    <p className="py-5 ml-10">{item.subtitle}</p>
+                    {item?.link &&
+                    <a className="btn-primary my-5 ml-16" href={item.link} target="_blank">View more</a>}
+                </div>)}
+            </div>
 
         </div>
     </section>

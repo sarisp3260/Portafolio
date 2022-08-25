@@ -27,6 +27,9 @@ const Cv = () => {
         <div className="first-sec h-max flex flex-col" >
           <div className="sec-intro h-3/4 grid grid-cols-1 md:grid-cols-2 place-items-center mb-10 pt-20 " id='cv'>
             <GiAstronautHelmet className='text-[128px] lg:text-[500px] md:text-[300px]'/>
+
+            {/* <iframe className='h-96 w-full rounded-lg' src='https://my.spline.design/untitled-0409f9e6cd4ef33f2d7c77868a3abdc2/' frameborder='0' width='100%' height='100%'></iframe> */}
+
             <div className="text-into flex flex-col font-medium gap-10">
               <span className='text-xl md:text-4xl'>I'm</span>
               <h2 className='text-3xl md:text-7xl font-bold'>{cv[0].name}</h2>

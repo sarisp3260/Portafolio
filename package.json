@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@splinetool/react-spline": "^2.2.1",
+    "@splinetool/runtime": "^0.9.80",
     "daisyui": "^2.15.1",
     "framer-motion": "^6.2.9",
     "react": "^17.0.2",

@@ -2,7 +2,7 @@ export const cv = [
     {
       name: "Sara Salas Perez",
       shortDesc: "Web full stack developer",
-      longDesc: "I am a bilingual web developer with experience in projects especially with Scrum methodologies. I'm a hard worker and have a good teamwork skills, I'm always very friendly and polite, and I'm also willing to learn new skills. I have worked in responsive web design and programming, in different parts of the process but I could say that my main skill is in the front-end. So enthusiastic to work together, then feel free to get in touch with me.",
+      longDesc: "I am a bilingual web developer with experience in projects especially with Scrum methodologies. I am hard-working as an individual but also as a team worker, always friendly and polite, but more importantly I am willing to constantly learn new skills. Something to say about me is I am able to listen effectively to follow up and solve problems. I have worked in responsive web design and programming, in different parts of the process but I could say that my main skill is in the front-end. So enthusiastic to work together, then feel free to get in touch with me.",
       education: [
         {
           title: "Educamás",
@@ -25,6 +25,19 @@ export const cv = [
       softskill: ["Adaptability","Desire to learn", "Creativity", "Teamwork", "Patience", "Cooperation"],
       hardskill: ["HTML && CSS", "JS", "React", "Tailwind", "Figma && Ilustrator", "Node", "Mysql && MongoDB"],
       achivments: [
+        {
+        title: "Woman Game Jam 2022 AUG 2022",
+        subtitle: "The Woman Game Jam encourages the participation of women in the video game development industry.",
+        },
+        {
+        title: "Belcorp Hackathon 3.0 edición Metaverso AUG 2022",
+        subtitle: "One week participation of development that sought a solution to a need of brands in the beauty area using the metaverse as main core.",
+        },
+        {
+        title: "Winner Hackathon FEMTECH JUL 2022",
+        subtitle: "Winner of the first version of the femtech event promoted by Imagine Apps. The main task was to develop an application based on the Global Sustainable Development Goals ",
+        link: "https://www.linkedin.com/posts/sara-salas-perez_femtech-tecnologaeda-hackathon-activity-6960001447505584129-f9nm/?utm_source=linkedin_share&utm_medium=member_desktop_web",
+        },
         {
         title: "Finalist Hackaton F5 Spain FEB 2022",
         subtitle: "Second place in the competition. The project to be performed was creation of a full web application in 3 days",

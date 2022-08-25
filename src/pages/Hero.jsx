@@ -14,7 +14,7 @@ const Landing = () => {
         <div className="center flex-col gap-5 w-full md:flex-row">
           <div className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 h-full flex flex-col justify-center relative center w-full  md:w-2/4">
             <p className="font-pacifica text-6xl font-black text-center select-none uppercase sm:text-8xl xl:text-[140px]">
-              Wellcome
+              Welcome
             </p>
             <p className="font-pacifica text-6xl mt-0 font-black text-center select-none uppercase sm:text-8xl xl:text-[140px]">
               to my page
