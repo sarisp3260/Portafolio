@@ -38,6 +38,11 @@ const ResponsiveMenu = () => {
               <span className="text-sm">Work</span>
             </Link>
 
+            <Link to="/Contact" className="center flex-col">
+              <MdContactMail className="text-5xl" />
+              <span className="text-sm">Contact</span>
+            </Link>
+
             <Link to="/Curriculum-Vitae" className="center flex-col">
               <div className="relative">
                 <BsFileEarmarkFill className="text-5xl" />
@@ -48,10 +53,7 @@ const ResponsiveMenu = () => {
               <span className="text-sm">CV</span>
             </Link>
 
-            <Link to="/Contact" className="center flex-col">
-              <MdContactMail className="text-5xl" />
-              <span className="text-sm">Contact</span>
-            </Link>
+    
           </div>
         )}
       </div>

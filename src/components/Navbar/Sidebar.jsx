@@ -16,25 +16,31 @@ const Sidebar = () => {
       <div className="hidden fixed left-5 top-52 bottom-52 lg:flex flex-col items-center justify-center gap-4 z-30">
 
         <Link to="/">
-          <div class="tooltip tooltip-right hover:text-blue duration-500" data-tip="Home">
+          <div className="tooltip tooltip-right hover:text-blue duration-500" data-tip="Home">
             <TiHome className="text-4xl" />
           </div>
         </Link>
 
         <Link to="/About">
-          <div class="tooltip tooltip-right hover:text-blue duration-500" data-tip="About">
+          <div className="tooltip tooltip-right hover:text-blue duration-500" data-tip="About">
             <BiHappyBeaming className="text-4xl" />
           </div>
         </Link>
 
         <Link to="/Work/Projects">
-          <div class="tooltip tooltip-right hover:text-blue duration-500" data-tip="Work">
+          <div className="tooltip tooltip-right hover:text-blue duration-500" data-tip="Work">
             <GiSwordwoman className="text-4xl" />
           </div>
         </Link>
 
+        <Link to="/Contact">
+          <div className="tooltip tooltip-right hover:text-blue duration-500" data-tip="Contact">
+            <MdContactMail className="text-4xl" />
+          </div>
+        </Link>
+
         <Link to="/Curriculum-Vitae">
-        <div class="tooltip tooltip-right" data-tip="CV">
+        <div className="tooltip tooltip-right" data-tip="CV">
           <div className="relative hover:text-blue duration-500">
             <BsFileEarmarkFill className="text-4xl" />
             <span className="absolute inset-0 left-1 top-2 text-black text-sm font-bold">Cv</span>
@@ -42,11 +48,7 @@ const Sidebar = () => {
         </div>
         </Link>
 
-        <Link to="/Contact">
-          <div class="tooltip tooltip-right hover:text-blue duration-500" data-tip="Contact">
-            <MdContactMail className="text-4xl" />
-          </div>
-        </Link>
+        
 
         {/* <GiSwordwoman/> */}
       </div>
